@@ -224,3 +224,8 @@ body{
     text-decoration: none;
     color:rgb(11, 149, 151)
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
