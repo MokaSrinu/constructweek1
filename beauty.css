@@ -1,0 +1,130 @@
+#container1{
+    display:flex;
+    width:100%;
+    height:35px;
+    background-color:rgb(3, 3, 63);
+    color:white;
+    justify-content: center;
+    font-family:arial;
+    font-size:16px;
+    padding:7px;
+}
+* { 
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+  }
+#container1>div>p>a{
+    color:white;
+    margin-left:10px;
+}
+#navbar{
+    display:flex;
+    width:100%;
+    height:130px;
+    background-color:#f0f1f7;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#navbar>div:nth-child(1){
+    width:20%;
+    height:auto;
+    padding:20px;
+}
+#navbar>div:nth-child(1)>div:nth-child(2){
+    display:flex;
+    font-size:22px;
+    margin-top:20px;
+}
+#navbar>div:nth-child(2){
+    width:70%;
+    height:auto;
+    padding:10px;
+}
+#navbar>div:nth-child(2)>div:nth-child(1){
+    display:flex;
+    margin-top:20px;
+    padding:10px;
+    border:1px solid rgb(4, 4, 124);
+    border-radius:36px;
+    width:74%;
+    background-color:white;
+}
+#navbar>div:nth-child(2)>div:nth-child(1)>select{
+   width:30%;
+   border:0px;
+   background-color:white;
+}
+#navbar>div:nth-child(2)>div:nth-child(1)>input{
+   width:65%;
+   border:0px;
+   background-color:white;
+   font-size:18px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#navbar>div:nth-child(2)>div:nth-child(1)>img{
+    width:auto;
+    padding:20px;
+}
+#navbar>div:nth-child(2)>div:nth-child(2){
+    display:flex;
+    margin-top:10px;
+    width:70%;
+    justify-content: space-around;
+    margin-left:10px;
+}
+#navbar>div:nth-child(3){
+   display:flex;
+   width:30%;
+   align-items: flex-end;
+}
+#navbar>div:nth-child(3)>div{
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+}
+body{
+    background-color:#f0f1f7;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  #beauty{
+    width:96%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+    margin-top:40px;
+}
+#beauty>div{
+  background-color:white;
+  padding:20px;
+}
+#beauty>div>p:nth-child(2){
+    color:rgb(79, 77, 77);
+}
+#beauty>div>p:nth-child(3){
+    color:rgb(29, 29, 201);
+}
+#beauty>div>p:nth-child(4){
+    color:rgb(206, 158, 36);
+}
+#beauty>div>p:nth-child(5){
+    color:rgb(29, 29, 201)
+}
+#beauty button{
+    width:60%;
+    margin-top:10px;
+    margin-left:16%;
+    padding:10px;
+    border-radius:36px;
+    background-color:rgb(7, 7, 103);
+    color:white;
+}
+#beauty img{
+    width:100%;
+    height:auto;
+}

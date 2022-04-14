@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./auto.css">
+</head>
+<body>
+    <div id="container1" >
+        <div><p>Buy now,pay later with Sezzle-4 payments,6 weeks,0% interest</p></div>
+        <div><p><a href="">Learn More</a></p></div>
+  </div>
+  <div id="navbar" >
+      <div>
+        <div><button style="background:#f0f1f7;border:0px;" id="home"><img  src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" height="40px" alt=""></button></div>
+          <div id="categories">
+              <div><img src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg" alt=""></div>
+              <div style="margin-left:10px"><p>Categories</p></div>
+          </div>
+      </div>
+      <div>
+          <div>
+              <select name="" id="department">
+                  <option value="All Departments">All Departments</option>
+                  <option value="Auto">Auto</option>
+                  <option value="Baby">Baby</option>
+                  <option value="Beauty">Beauty</option>
+                  <option value="Books">Books</option>
+                  <option value="Clothes">Clothes</option>
+                  <option value="Computers">Computers</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Food and Drink">Food and Drink</option>
+                  <option value="Health & Nutrition">Health & Nutrition</option>
+                  <option value="Jwellery">Jwellery</option>
+                  <option value="Shoes">Shoes</option>
+                  <option value="Sports and fitness">Sports and fitness</option>
+                  <option value="Tools">Tools</option>
+                  <option value="Toys">Toys</option>
+              </select>
+              <p style="font-size:25px;margin-right:10px">|</p>
+              <input type="text" placeholder="Search SHOP.COM...">
+              <div><button style="border:0px;" onclick="departfn()"><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg"  alt=""></button></div>
+          </div>
+          <div>
+              <div><p>Exclusive Brands</p></div>
+              <div><p>Stores</p></div>
+              <div><p>Deals</p></div>
+              <div><p>SHOP Travel</p></div>
+              <div><p>Departments</p></div>
+              <div><p>ShopBuddy</p></div>
+              <div><p>Shop Local</p></div>
+          </div>
+      </div>
+      <div>
+         <div>
+             <div><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg"></div>
+             <div><p>Sign in</p></div> 
+         </div>
+         <div>
+           <div><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg"></div>
+           <div style="margin-left:25px;"><p>Orders</p></div>
+         </div>
+         <div>
+             <div> <img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg"></div>
+             <div><p>Cart</p></div>
+         </div>
+      </div>
+  </div>
+  <div style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;padding:10px">
+      <p>SHOP.COM > Auto</p>
+  </div>
+  <div style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;padding:10px;">
+      <p>sort:</p>
+      <select name="" id="sort">
+          <option value="Ascending">Ascending</option>
+          <option value="Descending">Descending</option>
+      </select>
+  </div>
+  <div style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;padding:10px;">
+      <p>filters:</p>
+      <button id="lessthan30">less than 30</button>
+      <button id="lessthan100">less than 100</button>
+      <button id="greaterthan100">find expensive</button>
+  </div>
+  <div id="auto">
+    
+  </div>
+</body>
+<script src="./auto.js">
+    
+</script>
+</html>
