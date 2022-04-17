@@ -123,12 +123,6 @@ function openNav2() {
       window.location.href="./index.html"
   }
 
-  
-
-
-    
-    
-
-    
-    
-    
+  function fun1(){
+      window.location.href="./beauty.html";
+  }

@@ -122,13 +122,3 @@ function openNav2() {
   function homepage(){
       window.location.href="./index.html"
   }
-
-  
-
-
-    
-    
-
-    
-    
-    

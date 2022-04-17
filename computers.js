@@ -61,6 +61,7 @@ function departfn(){
         window.location.href="./toys.html"
     }
  }
+
  function openNav() {
     document.getElementById("mySidepanel").style.width = "350px";
   }
@@ -77,129 +78,127 @@ function departfn(){
     document.getElementById("mySidepanel1").style.width = "0";
   }
 
-
 var cartdata;
 if(localStorage.getItem("cartdata")===null){
     cartdata=[];
 }else{
     cartdata=JSON.parse(localStorage.getItem("cartdata"));
 }
-
-var books=[
+var auto=[
     {
-        image_url:"https://img.shop.com/Image/250000/251800/251872/products/1924322720.jpg?size=400x400",
-        name:"Barbour Publishing 256699 Everyday Bible Promise & Devotions Book",
-        price:"18.58",
-        discount:"+ $0.93/5% $ Cashback",
+        image_url:"https://img.shop.com/Image/220000/226800/226851/products/559024614.jpg?size=500x500",
+        name:"Autoworks™ Fuel Enhancer",
+        price:"23.95",
+        discount:"+ $0.48/2% $ Cashback",
         shipping:"Free Shipping With $99 orders",
     },
     {
-        image_url:"https://img.shop.com/Image/240000/243500/243545/products/1778343760.jpg?size=400x400",
-        name:"Children's Board Book: one Love By Cedella Marley",
-        price:"7.99",
-        discount:"+ $1.60/2% $ Cashback",
+        image_url:"https://img.shop.com/Image/220000/226800/226851/products/559024616.jpg?size=500x500",
+        name:"Friction Free 3000™ Engine Treatment",
+        price:"23.95",
+        discount:"+ $0.48/2% $ Cashback",
         shipping:"Free Shipping With $99 orders",
     },
     {
-        image_url:"https://img.shop.com/Image/240000/243500/243545/products/1908040977.jpg?size=400x400",
-        name:"Children's Board Book: the Berenstain Bears Sleepy Time Book By Mike Berenstain",
-        price:"7.99",
+        image_url:"https://img.shop.com/Image/220000/226800/226851/products/559024612.jpg?size=500x500",
+        name:"Autoworks™ High Performance Auto Care Shimmering Polish",
+        price:"20.95",
         discount:"+ $0.42/2% $ Cashback",
         shipping:"Free Shipping With $99 orders",
     }, 
     {
-        image_url:"https://img.shop.com/Image/210000/217300/217306/products/1775659779.jpg?size=400x400",
-        name:"baby's First Bible Stories Board Book",
-        price:"9.99",
-        discount:"+ $0.20/2% $ Cashback",
+        image_url:"https://img.shop.com/Image/260000/265300/265380/products/1904318537.jpg?size=400x400",
+        name:"Carb Rebuild Kit - for Yamaha fits 2005-2006 WR450F - Carburetor Repair Kit",
+        price:"32.59",
+        discount:"+ $1.30/4% $ Cashback",
         shipping:"Free Shipping With $99 orders",
     },
     {
-        image_url:"https://img.shop.com/Image/240000/243500/243545/products/1910442061.jpg?size=400x400",
-        name:"ned Dreads Bed A Story About Bedtime By Ronnie Sellers Multi",
-        price:"14.95",
+        image_url:"https://img.shop.com/Image/260000/265300/265380/products/1892238555.jpg?size=400x400",
+        name:"Raider Universal Motorcycle Cover XL Most 1500cc Fits Suzuki for Harley",
+        price:"15.79",
+        discount:"+ $0.63/4% $ Cashback",
+        shipping:"Free Shipping With $99 orders",
+    },
+    {
+        image_url:"https://img.shop.com/Image/280000/280600/280604/products/1868191189.jpg?size=400x400",
+        name:"Isotoner Women's Unlined Leather Palm Driving Gloves",
+        price:"23.95",
+        discount:"+ $0.48/2% $ Cashback",
+        shipping:"Free Shipping With $99 orders",
+    },
+    {
+        image_url:"https://img.shop.com/Image/250000/251800/251872/products/1891191903.jpg?size=400x400",
+        name:"Wise 3338-0033 Baja XL Bucket Seat, Brite White & Hot Teal",
+        price:"313.64",
+        discount:"+ $15.68/5% $ Cashback",
+        shipping:"Free Shipping With $99 orders",
+    },
+    {
+        image_url:"https://img.shop.com/Image/280000/284200/284287/products/1921117101.jpg?size=400x400",
+        name:"Auto Nexen N'Priz RH7 225/55R18 97H SL A/S Touring Tire",
+        price:"148.64",
+        discount:"+ $8.92/6% $ Cashback",
+        shipping:"Free Shipping With $99 orders",
+    },
+    {
+        image_url:"https://img.shop.com/Image/260000/265300/265380/products/1756593783.jpg?size=400x400",
+        name:"Fulmer Adult Open Face Helmet Motorcycle Bobber Chopper DOT Approved 353 EON",
+        price:"44.95",
+        discount:"+ $1.80/4% $ Cashback",
+        shipping:"Free Shipping With $99 orders",
+    },
+    {
+        image_url:"https://img.shop.com/Image/260000/265300/265380/products/1894399420.jpg?size=400x400",
+        name:"SPI Left Side Lower A-Arm fits Polaris Snowmobiles Replaces OEM # 2203021",
+        price:"119.95",
+        discount:"+ $4.80/4% $ Cashback",
+        shipping:"Free Shipping With $99 orders",
+    },
+    {
+        image_url:"https://img.shop.com/Image/250000/251800/251872/products/1598236906.jpg?size=400x400",
+        name:"Spec-D Tuning MFCAT3-G35032 Dual Catback Exhaust System Burnt Tip for 03 to 07 Infiniti G35, 11 x 30 x 44 in.",
+        price:"306.67",
+        discount:"+ $15.33/5% $ Cashback",
+        shipping:"Free Shipping With $99 orders",
+    },
+    {
+        image_url:"https://img.shop.com/Image/280000/281900/281909/products/1840586031.jpg?size=400x400",
+        name:"Noco GB40 1,000 Amp UltraSafe Lithium Jump Starter",
+        price:"99.95",
+        discount:"+ $2.00/2% $ Cashback",
+        shipping:"Free Shipping With $99 orders",
+    },
+    {
+        image_url:"https://img.shop.com/Image/240000/248300/248358/products/1885070694.jpg?size=400x400",
+        name:"PAC PAC Locpro 2CH Line Output Converter with Remote Turn-on",
+        price:"22.21",
+        discount:"+ $0.89/4% $ Cashback",
+        shipping:"Free Shipping With $99 orders",
+    },
+    {
+        image_url:"https://img.shop.com/Image/250000/251800/251872/products/1887624458.jpg?size=400x400",
+        name:"Martin Wheel 274424 215x60-8 Load Range C Trailer Tire",
+        price:"64.55",
+        discount:"+ $3.23/5% $ Cashback",
+        shipping:"Free Shipping With $99 orders",
+    },
+    {
+        image_url:"https://img.shop.com/Image/280000/281900/281909/products/1840384568.jpg?size=400x400",
+        name:"Metra 4ONI22 Antenna Adapter for Nissan/Infiniti Vehicles",
+        price:"14.99",
         discount:"+ $0.30/2% $ Cashback",
         shipping:"Free Shipping With $99 orders",
     },
     {
-        image_url:"https://img.shop.com/Image/210000/217300/217306/products/1775659724.jpg?size=400x400",
-        name:"Chronicle Books baby Unicorn Finger Puppet Book",
-        price:"6.99",
-        discount:"+ $0.14/2% $ Cashback",
-        shipping:"Free Shipping With $99 orders",
-    },
-    {
-        image_url:"https://img.shop.com/Image/250000/251800/251872/products/1925752793.jpg?size=400x400",
-        name:"Kingstone Media Group 263656 Book - The Letters Volume 2 - Graphic Novel",
-        price:"11.35",
-        discount:"+ $0.57/5% $ Cashback",
-        shipping:"Free Shipping With $99 orders",
-    },
-    {
-        image_url:"https://img.shop.com/Image/250000/251800/251872/products/1927903800.jpg?size=400x400",
-        name:"Kingstone Media Group 263637 Revelation Volume 1 The Vision Graphic Novel Book",
-        price:"11.30",
-        discount:"+ $0.56/5% $ Cashback",
-        shipping:"Free Shipping With $99 orders",
-    },
-    {
-        image_url:"https://img.shop.com/Image/210000/217300/217306/products/1775661990.jpg?size=400x400",
-        name:"Chronicle Books baby Giraffe Finger Puppet Book",
-        price:"6.99",
-        discount:"+ $0.14/2% $ Cashback",
-        shipping:"Free Shipping With $99 orders",
-    },
-    {
-        image_url:"https://img.shop.com/Image/250000/251800/251872/products/1035786424.jpg?size=400x400",
-        name:"Leading Adult Learning Supporting Adult Development In Our Schools, Paperback",
-        price:"55.88",
-        discount:"+ $2.79/5% $ Cashback",
-        shipping:"Free Shipping With $99 orders",
-    },
-    {
-        image_url:"https://img.shop.com/Image/250000/251800/251872/products/1912889003.jpg?size=400x400",
-        name:"Baker Publishing Group 169087 Book - The Bride Ships No.3 a Bride of Convenience",
-        price:"22.78",
-        discount:"+ $1.14/5% $ Cashback",
-        shipping:"Free Shipping With $99 orders",
-    },
-    {
-        image_url:"https://img.shop.com/Image/250000/251800/251872/products/1564844302.jpg?size=400x400",
-        name:"Blackstone Audio 9781538417812 June Sparrow & the Million-Dollar Penny Audio Book",
-        price:"50.05",
-        discount:"+ $2.50/5% $ Cashback",
-        shipping:"Free Shipping With $99 orders",
-    },
-    {
-        image_url:"https://img.shop.com/Image/260000/268500/268595/products/1924772468.jpg?size=400x400",
-        name:"Kohl's Cares The Hunger Games #3: Mockingjay by Suzanne Collins, Multicolor",
-        price:"4.00",
-        discount:"+ $0.36/2% $ Cashback",
-        shipping:"Free Shipping With $99 orders",
-    },
-    {
-        image_url:"https://img.shop.com/Image/250000/251800/251872/products/998940217.jpg?size=400x400",
-        name:"BSA Eight Million Ways To Die - Audiobook CD",
-        price:"23.96",
-        discount:"+ $1.20/5% $ Cashback",
-        shipping:"Free Shipping With $99 orders",
-    },
-    {
-        image_url:"https://img.shop.com/Image/270000/277400/277418/products/1879456729.jpg?size=400x400",
-        name:"Explorer Academy: The Tiger's Nest A Novel Official shopDisney",
-        price:"16.99",
-        discount:"+ $1.20/2% $ Cashback",
-        shipping:"Free Shipping With $99 orders",
-    },
-    {
-        image_url:"https://img.shop.com/Image/250000/251800/251872/products/1834454543.jpg?size=400x400",
-        name:"Scrub Jay Journeys 137125 Hertz to Be a Hero- Volume Two",
-        price:"17.86",
-        discount:"+ $0.89/5% $ Cashback",
+        image_url:"https://img.shop.com/Image/260000/269300/269358/products/1850455446.jpg?size=400x400",
+        name:"Captain America Shield Logo Car Cup Holder Coaster 2-Pack",
+        price:"13.99",
+        discount:"+ $0.56/4% $ Cashback",
         shipping:"Free Shipping With $99 orders",
     },
 ];
-books.forEach(function(ele){
+auto.forEach(function(ele){
  var box=document.createElement("div");
  var img=document.createElement("img");
  img.src=ele.image_url;
@@ -219,32 +218,32 @@ books.forEach(function(ele){
      //console.log(cartdata);
  });
  box.append(img,name,price,discount,shipping,cartbutton);
- document.querySelector("#books").append(box);
+ document.querySelector("#auto").append(box);
 });
 
 
-var tempbooks=books;
+var tempauto=auto;
 document.querySelector("#sort").addEventListener("change",sortfn);
 function sortfn(){
-    //console.log("calling");
+    console.log("calling");
    var res=document.querySelector("#sort").value;
    if(res=="Ascending"){
-    //console.log("calling");
-    tempbooks.sort(function(a,b){
+    console.log("calling");
+     tempauto.sort(function(a,b){
          return a.price-b.price;
      });
    }else{
-    tempbooks.sort(function(a,b){
+    tempauto.sort(function(a,b){
         return b.price-a.price;
     });
    }
-   console.log(tempbooks);
-   display(tempbooks);
+   console.log(tempauto);
+   display(tempauto);
 }
-function display(tempbooks){
-    document.querySelector("#books").innerHTML=" ";
-    tempbooks.forEach(function(ele){
-        //console.log("calling auto");
+function display(tempauto){
+    document.querySelector("#auto").innerHTML=" ";
+    tempauto.forEach(function(ele){
+        console.log("calling auto");
         var box=document.createElement("div");
         var img=document.createElement("img");
         img.src=ele.image_url;
@@ -264,16 +263,16 @@ function display(tempbooks){
             //console.log(cartdata);
         });
         box.append(img,name,price,discount,shipping,cartbutton);
-        document.querySelector("#books").append(box);
+        document.querySelector("#auto").append(box);
        });
 }
 
-document.querySelector("#lessthan10").addEventListener("click",function(){
-    var alessthan10=books.filter(function(ele){
-        return ele.price<10;
+document.querySelector("#lessthan30").addEventListener("click",function(){
+    var alessthan30=auto.filter(function(ele){
+        return ele.price<30;
     });
-    document.querySelector("#books").innerHTML=" ";
-    alessthan10.forEach(function(ele){
+    document.querySelector("#auto").innerHTML=" ";
+    alessthan30.forEach(function(ele){
         //console.log("calling auto");
         var box=document.createElement("div");
         var img=document.createElement("img");
@@ -294,16 +293,16 @@ document.querySelector("#lessthan10").addEventListener("click",function(){
             //console.log(cartdata);
         });
         box.append(img,name,price,discount,shipping,cartbutton);
-        document.querySelector("#books").append(box);
+        document.querySelector("#auto").append(box);
        });
 })
 
-document.querySelector("#lessthan20").addEventListener("click",function(){
-    var alessthan20=books.filter(function(ele){
-        return ele.price<20;
+document.querySelector("#lessthan100").addEventListener("click",function(){
+    var alessthan100=auto.filter(function(ele){
+        return ele.price<100;
     });
-    document.querySelector("#books").innerHTML=" ";
-    alessthan20.forEach(function(ele){
+    document.querySelector("#auto").innerHTML=" ";
+    alessthan100.forEach(function(ele){
         //console.log("calling auto");
         var box=document.createElement("div");
         var img=document.createElement("img");
@@ -324,17 +323,17 @@ document.querySelector("#lessthan20").addEventListener("click",function(){
             //console.log(cartdata);
         });
         box.append(img,name,price,discount,shipping,cartbutton);
-        document.querySelector("#books").append(box);
+        document.querySelector("#auto").append(box);
        });
 })
 
 
-document.querySelector("#greaterthan20").addEventListener("click",function(){
-    var greaterthan20=books.filter(function(ele){
-        return ele.price>20;
+document.querySelector("#greaterthan100").addEventListener("click",function(){
+    var greaterthan100=auto.filter(function(ele){
+        return ele.price>100;
     });
-    document.querySelector("#books").innerHTML=" ";
-    greaterthan20.forEach(function(ele){
+    document.querySelector("#auto").innerHTML=" ";
+    greaterthan100.forEach(function(ele){
         //console.log("calling auto");
         var box=document.createElement("div");
         var img=document.createElement("img");
@@ -355,7 +354,7 @@ document.querySelector("#greaterthan20").addEventListener("click",function(){
             //console.log(cartdata);
         });
         box.append(img,name,price,discount,shipping,cartbutton);
-        document.querySelector("#books").append(box);
+        document.querySelector("#auto").append(box);
        });
 })
 
