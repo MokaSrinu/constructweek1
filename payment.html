@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./payment.css">
 </head>
 <body>
     <div id="container1" >
@@ -163,26 +163,36 @@
          </div>
       </div>
   </div>
-  <div id="login">
-     <form action="">
-         <h1>Sign in</h1>
-         <p>Email address:</p>
-         <input type="text" placeholder="yourname@example.com" id="signinemail">
-         <p>Password:</p>
-         <input type="password" placeholder="Please enter your password" id="signinpassword">
-         <a  href="">Forgot your password?</a>
-         <input type="submit" value="Sign in"  id="signbutton">
-     </form>
-     <div>
-         <h1>Don't have an account?</h1>
-         <p>With a SHOP.COM account,you can enjoy the</p>
-         <p>following benefits: up to 50% <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" height="12px" width="12px" alt=""> Cashback on eligible</p>
-         <p>purchases,redeem discount coupons,order status</p>
-         <p>and history,saved payment options and addresses,</p>
-         <p>exclusive emails and more. <a href="">Learn more</a></p>
-         <button onclick="function1()">Create your new account</button>
-     </div>
-  </div>
+  
+  <div id="paymentofcart">
+    <h1>Enter Payment Details</h1>
+    <form action="">
+        <input type="number" placeholder="enter your card number" id="cardno">
+        <input type="text" placeholder="enter your name" id="name">
+        <input type="text" placeholder="enter your address" id="address">
+        <select name="" id="countries">
+            <option value="select">select</option>
+            <option value="india">india</option>
+            <option value="russia">russia</option>
+            <option value="japan">japan</option>
+            <option value="USA">USA</option>
+            <option value="others">Others</option>
+        </select>
+        <div>
+            <input style="margin-right:10px;padding-left:20px;padding-right:20px;" type="text" placeholder="city" id="city">
+            <select style="padding-right:40px;padding-left:40px" name="" id="countries">
+                <option value="select">select</option>
+                <option value="india">india</option>
+                <option value="russia">russia</option>
+                <option value="japan">japan</option>
+                <option value="USA">USA</option>
+                <option value="others">Others</option>
+            </select>
+            <input style="padding-left:30px;padding-right:26px" type="number" id="zipcode" placeholder="zipcode">
+        </div>
+        <input type="submit" value="complete payment" id="payment">
+    </form>
+</div>
   <div id="input">
     <p>Get Email Deals & Earn Cashback</p>
     <form class="form">
@@ -276,6 +286,6 @@
       <img class="fles-item" src="https://seal.digicert.com/seals/cascade/?tag=mcRGO2B9&referer=www.shop.com&format=png&lang=en&seal_number=3&seal_size=m" alt="Digicert" width="75" height="auto"> 
   </div>
 </div>
-<script src="./login.js"></script>
+<script src="./payment.js"></script>
 </body>
 </html>

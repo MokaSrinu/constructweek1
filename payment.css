@@ -390,47 +390,35 @@ color:pure whitesmoke;
     width: 85%;
 }
 
-#login{
-    width:60%;
+#paymentofcart{
+    width:40%;
     margin:auto;
-    margin-top:50px;
-    margin-bottom:50px;
-    display:flex;
-    height:auto;
-    
+    margin-top:40px;
+    margin-bottom:40px;
+    padding:20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-#login>form{
-    width:300px;
+#paymentofcart>form{
     display:flex;
     flex-direction:column;
-    margin-right:30px;
+    
 }
-#login>form>input{
+#paymentofcart>form>input{
     padding:10px;
-    margin:10px 10px 10px 0;
+    margin-top:10px;
 }
-#login>div>button{
+#paymentofcart>form>select{
     padding:10px;
-    margin:10px 10px 10px 0;
-    background:white;
-    color:rgb(3, 3, 63);
-    border:1px solid rgb(3, 3, 63);
-    font-weight:bold;
-    font-size:15px;
+    margin-top:10px;
 }
-#login>div>button:hover{
-    background-color:rgb(3, 3, 63);
-    color:white;
+#paymentofcart>form>div{
+    width:100%;
 }
-#login>form>a{
-    color:black;
+#paymentofcart>form>div>input{
+    padding:10px;
+    margin-top:10px;
 }
-#login>form>a:hover{
-   color:rgb(19, 147, 238);
-}
-#signbutton{
-    background-color:rgb(3, 3, 63);
-    color:white;
-    font-weight:bold;
-    border:1px solid rgb(3, 3, 63);
+#paymentofcart>form>div>select{
+    padding:10px;
+    margin-top:10px;
 }

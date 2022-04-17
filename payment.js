@@ -123,27 +123,21 @@ function openNav2() {
       window.location.href="./index.html"
   }
 
-  document.querySelector("form").addEventListener("submit",loginfn);
-    var registredusers=JSON.parse(localStorage.getItem("userdata1"));
-    function loginfn(){
-      event.preventDefault();
-        var enteredemail=document.querySelector("#signinemail").value;
-        var enteredpass=document.querySelector("#signinpassword").value;
-        var flag=false;
-        registredusers.forEach(ele => {
-            if(ele.email===enteredemail && ele.password===enteredpass){
-                flag=true;
-                alert("login success");
-                window.location.href="./index.html"
-            }
-        });
-        if(flag==false){
-            window.alert("login failed or signup first");
-        }
+
+  document.querySelector("form").addEventListener('submit',paymentfn);
+    function paymentfn(){
+        event.preventDefault();
+       var cardno= document.querySelector("#cardno").value;
+       var name= document.querySelector("#name").value;
+       var address= document.querySelector("#address").value;
+       var country= document.querySelector("#countries").value;
+       var city= document.querySelector("#city").value;
+       var zipcode= document.querySelector("#zipcode").value;
+       if(cardno!=undefined){
+           //console.log("hi");
+           document.querySelector("h1").innerText="Working";
+           window.location.href="./otp.html";
+       }else{
+           window.alert("please enter all fields");
+       }
     }
-
-
-    function function1(){
-      window.location.href="./signup.html"
-    }
-

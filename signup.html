@@ -163,6 +163,7 @@
          </div>
       </div>
   </div>
+  
   <form action="">
       <h1>Create an account</h1>
       <p>* Indicates required field</p>
@@ -172,14 +173,30 @@
               <td>Last name*</td>
           </tr>
           <tr>
-              <td><input type="text" placeholder="First name here"></td>
-              <td><input type="text" placeholder="Last name here"></td>
+              <td><input type="text" placeholder="First name here" id="firstname"></td>
+              <td><input type="text" placeholder="Last name here"  id="lastname"></td>
           </tr>
           <tr>
              <td>Email address*</td>
-             <td><input type="email" placeholder="yourname@example"></td>
+          </tr>
+          <tr>
+            <td><input type="email" placeholder="yourname@example" id="email"></td>
+          </tr>
+          <tr>
+              <td>Password* (At least 7 characters)</td>
+              <td>Confirm Password*</td>
+          </tr>
+          <tr>
+              <td><input type="password" placeholder="please enter a minimum of 7 characters" id="password1"></td>
+              <td><input type="password" placeholder="please reenter your password" id="password2"></td>
           </tr>
       </table>
+      <p style="margin-left:10px;margin-bottom:10px;"><b>Text Message (SMS) Alerts:(Optional)</b></p>
+      <input style="margin-left:10px;margin-right:10px;margin-bottom:10px;" type="checkbox">Do you want to sign up for Shopper alerts from SHOP.COM?(Message and data rates may apply.)
+      <p style="margin-left:10px;margin-bottom:10px;">Mobile Phone</p>
+      <input style="width:400px;padding:10px;margin-left:10px;" type="number" placeholder="please enter your 10 digit phone number (ie.999 999 9999)" id="phonenm"><br>
+      <button style="width:400px;margin-top:10px;margin-left:10px;padding:10px;background-color:rgb(3, 3, 63);color:white;border:0px" onclick="signupfn()">Create your new account</button>
+      <p>By creating an account, you are agreeing to our <a href="#">Terms of services</a> and <a>Privacy Policy.</a></p>
   </form>
   <div id="input">
     <p>Get Email Deals & Earn Cashback</p>

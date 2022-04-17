@@ -126,3 +126,25 @@ function openNav2() {
   function fun1(){
       window.location.href="./beauty.html";
   }
+
+  var userdata;
+if(localStorage.getItem("userdata1")==null){
+    userdata1=[];
+}else{
+    userdata1=JSON.parse(localStorage.getItem("userdata1"));
+}
+
+function signupfn(){
+    event.preventDefault();
+    var userobj={
+        firstname:document.querySelector("#firstname").value,
+        lastname:document.querySelector("#lastname").value,
+        email:document.querySelector("#email").value,
+        phoneno:document.querySelector("#phonenm").value,
+        password:document.querySelector("#password1").value,
+    }
+    userdata1.push(userobj);
+    localStorage.setItem("userdata1",JSON.stringify(userdata1));
+    window.location.href="./index.html";
+    alert("successfully signedup");
+}

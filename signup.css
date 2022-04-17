@@ -389,3 +389,17 @@ color:pure whitesmoke;
     float: left;
     width: 85%;
 }
+
+form{
+    width:60%;
+    margin:auto;
+    padding:20px;
+}
+form td{
+    padding:10px
+}
+form td>input{
+    padding:10px;
+    width:400px;
+}
+
