@@ -123,27 +123,9 @@ function openNav2() {
       window.location.href="./index.html"
   }
 
-  document.querySelector("form").addEventListener("submit",loginfn);
-    var registredusers=JSON.parse(localStorage.getItem("userdata1"));
-    function loginfn(){
-      event.preventDefault();
-        var enteredemail=document.querySelector("#signinemail").value;
-        var enteredpass=document.querySelector("#signinpassword").value;
-        var flag=false;
-        registredusers.forEach(ele => {
-            if(ele.email===enteredemail && ele.password===enteredpass ){
-                flag=true;
-                alert("login success");
-                window.location.href="./index.html"
-            }
-        });
-        if(flag==false){
-            window.alert("login failed or signup first");
-        }
-    }
-
-
-    function function1(){
-      window.location.href="./signup.html"
-    }
-
+  function paymentfunction(){
+    window.location.href="./payment.html";
+  }
+  function orderspage(){
+    window.location.href="./orders.html"
+  }
