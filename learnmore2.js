@@ -129,15 +129,3 @@ function openNav2() {
   function orderspage(){
     window.location.href="./orders.html"
   }
-
-  
-
-  
-
-
-    
-    
-
-    
-    
-    

@@ -1,3 +1,117 @@
+.sezzle {
+    text-align: center;
+}
+.simple-para {
+    text-align: center;
+    font-size: 25px;
+    width: 60%;
+    margin: 0 auto;
+}
+.heading {
+ 
+    color: white;
+    background-color: #16513f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin: auto;
+}
+.page {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 80%;
+    margin: auto;
+
+}
+.working-img {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    
+}
+.h1 {
+    text-align: center;
+    font-size: 22px;
+}
+.how-to{
+    display: flex;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+}
+.how-to-images {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.how-to-images h1{
+    color: red;
+    text-align: center;
+}
+.how-to-images p{
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+}
+.download {
+    width: 60%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+}
+.appstore {
+    display: flex;
+}
+.cashback {
+    width:100%;
+    height: 400px;
+    background-color: #16513f;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+.categories {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.products {
+    margin: auto;
+
+}
+.products p {
+    text-align: center;
+    font-size: 18px;
+}
+.categories2 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+
+}
+.product1 {
+    margin: auto;
+    margin-top: 0;
+    
+}
+.product1 p {
+    text-align: center;
+    font-size: 18px;
+}
+.help {
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    height: 250px;
+}
+.faq {
+    margin-top: 100px;
+}
+
+
 #container1{
     display:flex;
     width:100%;
@@ -388,20 +502,4 @@ color:pure whitesmoke;
     margin: 0 10px;
     float: left;
     width: 85%;
-}
-#onetimepassword{
-    margin-top:100px;
-    margin-bottom:200px;
-}
-#onetimepassword>form{
-    width:30%;
-    margin:auto;
-    display:flex;
-    flex-direction: column;
-    padding:30px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-#onetimepassword>form>input{
-    padding:10px;
-    margin-top:10px;
 }

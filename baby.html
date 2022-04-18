@@ -113,12 +113,12 @@
                 <p style="margin-left:10px;font-size:22px"><b>Account</b></p>
             </div>
             <p style="margin-left:20px">Your Shop Consultant is<b>SHOP.COM</b></p>
-            <a  href="#" style="margin-top:20px"><img src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg" style="margin-right:10px" width="20px" height="20px" alt="">Sign in</a>
+            <a  href="./login.html" style="margin-top:20px"><img src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg" style="margin-right:10px" width="20px" height="20px" alt="">Sign in</a>
             <a href="#"><img src="https://img.shop.com/Image/resources/images/icon-track-orders-24px.svg" style="margin-right:10px" width="20px" height="20px">Track Orders</a>
             <a href="#"><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" style="margin-right:10px" width="20px" height="20px">Reorder items</a>
             <a href="#"><img src="https://img.shop.com/Image/resources/images/icon-cashback-sm-24px.svg" style="margin-right:10px" width="20px" height="20px">Cashback Program</a>
             <a href="#"><img src="https://img.shop.com/Image/resources/images/icon-help-outline-24px.svg" style="margin-right:10px" width="20px" height="20px">Help</a>
-            <a href="#"><img src="https://img.shop.com/Image/resources/images/icon-create-account-24px.svg" style="margin-right:10px" width="20px" height="20px">Create Account</a>
+            <a href="signup.html"><img src="https://img.shop.com/Image/resources/images/icon-create-account-24px.svg" style="margin-right:10px" width="20px" height="20px">Create Account</a>
             <a href="#" style="margin-bottom:30px"><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" style="margin-right:10px" width="20px" height="20px">My Account</a>
             <hr style="color:azure">
             <a href="#"><img src="https://img.shop.com/Image/resources/images/icon-list-manager-24px.svg" style="margin-right:10px;margin-top:30px" width="20px" height="20px">List Manger</a>
@@ -141,7 +141,7 @@
        </div>
        <div>
          <div><img style="margin-bottom:3px;margin-right:20px;margin-left:-30px" src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg"></div>
-         <div><p><button style="font-size:16px;border:0px;background-color:#f0f1f7;margin-left:5px;margin-top:2px">Orders</button></p></div>
+         <div><p><button style="font-size:16px;border:0px;background-color:#f0f1f7;margin-left:5px;margin-top:2px" onclick="orderspage()">Orders</button></p></div>
        </div>
        <div>
            <div> <img style="margin-top:8px;" src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg"></div>
@@ -156,7 +156,7 @@
                 <p style="color:teal;text-align:center;font-weight:bold" id="amount"></p>
             </div>
             <div id="paymentbutton">
-                <button>Payment Option/ Save For Later</button><br>
+                <button onclick="paymentfunction()">Payment Option/ Save For Later</button><br>
                 <button onclick="homepage()">Continue Shopping</button>
             </div>
           </div>

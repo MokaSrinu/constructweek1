@@ -1,3 +1,51 @@
+.buddy {
+    width: 65%;
+    margin: auto;
+}
+.nav {
+    width: 65%;
+    height: 60px;
+    background-color: skyblue;
+    color: white;
+    margin: auto;
+    display: flex;
+
+}
+
+.browser {
+    display: flex;
+    margin-top: 35px;
+    padding-left: 10px;
+    
+}
+.right {
+    float:right;
+    width: 150px;
+    height: 50%;
+    margin-top: 30px;
+    margin-left: 500px;
+}
+.saving {
+    width: 65%;
+    margin: auto;
+}
+.shoppers {
+    width: 65%;
+    height: 300px;
+    display: flex;
+    margin: auto;
+
+}
+.shoppers-img {
+    width: 33%;
+    height: 100%;
+    margin: auto;
+}
+.frequently {
+    width: 65%;
+    margin: auto;
+}
+
 #container1{
     display:flex;
     width:100%;
@@ -273,41 +321,19 @@
     color:#48cae4;
   }
 
-  #cart{
-    width:550px;
-    display:grid;
-    grid-template-columns:repeat(1,1fr);
-    gap:20px;
-    color:black;
-    
-}
-#cart>div{
-padding:20px;
-width:40%;
-height:auto;
+
+  #our-brands {
+    height: 400px;
+    width: 95%;
+    display: flex;
+    margin: auto;
 
 }
-#paymentbutton{
-padding:20px;
-text-align:center;
-
+#our-brands a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
 }
-#paymentbutton>button{
-border:1px solid rgb(3, 3, 63);
-background-color:white;
-padding:20px;
-color:rgb(3, 3, 63);
-font-size:18px;
-font-family:arial;
-font-weight:bold;margin-top:20px;
-margin-bottom:20px;
-}
-#paymentbutton>button:hover{
-background-color:rgb(3, 3, 63);
-color:pure whitesmoke;
-}
-
-
 #about a {
     text-decoration: none;
 }
@@ -388,20 +414,4 @@ color:pure whitesmoke;
     margin: 0 10px;
     float: left;
     width: 85%;
-}
-#onetimepassword{
-    margin-top:100px;
-    margin-bottom:200px;
-}
-#onetimepassword>form{
-    width:30%;
-    margin:auto;
-    display:flex;
-    flex-direction: column;
-    padding:30px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-#onetimepassword>form>input{
-    padding:10px;
-    margin-top:10px;
 }

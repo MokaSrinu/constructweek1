@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document</title>
-    <link rel="stylesheet" href="./otp.css">
+    <link rel="stylesheet" href="shopLocal.css">
 </head>
 <body>
     <div id="container1" >
         <div><p>Buy now,pay later with Sezzle-4 payments,6 weeks,0% interest</p></div>
-        <div><p><a href="">Learn More</a></p></div>
+        <div><p><a href="./learnmore1.html">Learn More</a></p></div>
   </div>
   <div id="navbar" >
       <div>
@@ -113,12 +111,12 @@
                   <p style="margin-left:10px;font-size:22px"><b>Account</b></p>
               </div>
               <p style="margin-left:20px">Your Shop Consultant is<b>SHOP.COM</b></p>
-              <a  href="#" style="margin-top:20px"><img src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg" style="margin-right:10px" width="20px" height="20px" alt="">Sign in</a>
+              <a  href="./login.html" style="margin-top:20px"><img src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg" style="margin-right:10px" width="20px" height="20px" alt="">Sign in</a>
               <a href="#"><img src="https://img.shop.com/Image/resources/images/icon-track-orders-24px.svg" style="margin-right:10px" width="20px" height="20px">Track Orders</a>
               <a href="#"><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" style="margin-right:10px" width="20px" height="20px">Reorder items</a>
               <a href="#"><img src="https://img.shop.com/Image/resources/images/icon-cashback-sm-24px.svg" style="margin-right:10px" width="20px" height="20px">Cashback Program</a>
               <a href="#"><img src="https://img.shop.com/Image/resources/images/icon-help-outline-24px.svg" style="margin-right:10px" width="20px" height="20px">Help</a>
-              <a href="#"><img src="https://img.shop.com/Image/resources/images/icon-create-account-24px.svg" style="margin-right:10px" width="20px" height="20px">Create Account</a>
+              <a href="signup.html"><img src="https://img.shop.com/Image/resources/images/icon-create-account-24px.svg" style="margin-right:10px" width="20px" height="20px">Create Account</a>
               <a href="#" style="margin-bottom:30px"><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" style="margin-right:10px" width="20px" height="20px">My Account</a>
               <hr style="color:azure">
               <a href="#"><img src="https://img.shop.com/Image/resources/images/icon-list-manager-24px.svg" style="margin-right:10px;margin-top:30px" width="20px" height="20px">List Manger</a>
@@ -141,7 +139,7 @@
          </div>
          <div>
            <div><img style="margin-bottom:3px;margin-right:20px;margin-left:-30px" src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg"></div>
-           <div><p><button style="font-size:16px;border:0px;background-color:#f0f1f7;margin-left:5px;margin-top:2px">Orders</button></p></div>
+           <div><p><button style="font-size:16px;border:0px;background-color:#f0f1f7;margin-left:5px;margin-top:2px" onclick="orderspage()">Orders</button></p></div>
          </div>
          <div>
              <div> <img style="margin-top:8px;" src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg"></div>
@@ -156,21 +154,74 @@
                   <p style="color:teal;text-align:center;font-weight:bold" id="amount"></p>
               </div>
               <div id="paymentbutton">
-                  <button>Payment Option/ Save For Later</button><br>
+                  <button onclick="paymentfunction()">Payment Option/ Save For Later</button><br>
                   <button onclick="homepage()">Continue Shopping</button>
               </div>
             </div>
          </div>
       </div>
   </div>
-  
-  <div id="onetimepassword">
-    <form action="">
-        <p>we have sent an otp for your credit card registered mobile number please enter here</p>
-        <input type="number" placeholder="Enter OTP" id="otp">
-        <input type="submit" value="submit">
-    </form>
- </div>
+<div class="local">
+    <div class="local-img">
+        <img src="https://img.shop.com/Image/ShopLocal/ShopLocalLogo.svg">
+    </div>
+    <input type="submit" id="image-button" value="How This Works"></input>
+    <input type="submit" id="image-button1" value="Link My Card"></input>
+    <input type="submit" id="image-button2" value="Search Offers"></input>
+
+</div>
+<div class="map">
+    <img src="https://img.shop.com/Image/resources/images/no-results-page@2x.jpg">
+    <div class="find">
+        <form role="search" class="shoplocal-search">
+            
+
+        </form>
+       
+    </div>
+</div>
+<div class="sorry">
+    <div style="text-align: center;">
+        <p style="font-size: 30px;">Sorry, there are no results near</p>
+        <p>Make sure Near contains a Zipcode or City, State.<br>
+            Make sure all words are spelled correctly.<br>
+            Try Different keywords.<br>
+            Try more general keywords.<br>
+            Or Try one of these top locations</p>
+    </div>
+</div>
+<h1>Top Offer Locations</h1>
+<div class="location">
+    <div class="cities">
+        <img src="https://r3.whistleout.com/public/images/articles/2016/12/CHICAGO.jpg">
+    </div>
+    <div class="cities">
+        <img src="https://onlinedsa.merrimack.edu/wp-content/uploads/2017/08/using-data-to-predict-next-hollywood-blockbuster.jpg">
+    </div>
+    <div class="cities">
+        <img src="https://i.insider.com/54c6d3c3eab8ea8679cd15bd?width=1149">
+    </div>
+    <div class="cities">
+        <img src="https://static.americasbestracing.net/s3fs-public/styles/large_hero_16_9/public/article/beachhero.jpg?M4glIbJgyl5zkLMA9vyeCq1q7OGrIigj&itok=rIMUi4Ki&c=3fdbde16bb0e4fd6a93cfb16ba284d08">
+    </div>
+    <div class="cities">
+        <img src="https://k48b9e9840-flywheel.netdna-ssl.com/wp-content/uploads/2013/12/San_Francisco.jpg">
+    </div>
+    <div class="cities">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPkGKj1qByDtdRqxdoHbnTr1zSPCTjxLq33rJtrOWSelBdPUE_">
+    </div>
+</div>
+<div class="deals">
+    <h3>Get email updates on SHOP Local offers in</h3>
+    <input style="margin-left: 20px; width: 250px; height: 30px;" placeholder="Zip Code">
+    <input style="margin-left: 20px; width: 250px; height: 30px;" placeholder="yourname@example.com">
+    <button style="color: white; background-color: #414467; margin-left: 20px; width: 100px; height: 30px;" type="submit">Sign  up</button>
+  </div>
+  <input type="checkbox" style="float: left; margin-top: 5px;">
+  <div style="margin-left: 25px;">
+       
+Yes, send me more great deals from SHOP.COM
+  </div>
   <div id="input">
     <p>Get Email Deals & Earn Cashback</p>
     <form class="form">
@@ -264,6 +315,6 @@
       <img class="fles-item" src="https://seal.digicert.com/seals/cascade/?tag=mcRGO2B9&referer=www.shop.com&format=png&lang=en&seal_number=3&seal_size=m" alt="Digicert" width="75" height="auto"> 
   </div>
 </div>
-<script src="./otp.js"></script>
 </body>
+<script src="./shoplocal.js"></script>
 </html>

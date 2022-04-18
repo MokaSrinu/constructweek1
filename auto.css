@@ -464,4 +464,38 @@ body{
   width: 85%;
 }
 
+#cart{
+  width:550px;
+  display:grid;
+  grid-template-columns:repeat(1,1fr);
+  gap:20px;
+  color:black;
+  
+}
+#cart>div{
+padding:20px;
+width:40%;
+height:auto;
+
+}
+#paymentbutton{
+padding:20px;
+text-align:center;
+
+}
+#paymentbutton>button{
+border:1px solid rgb(3, 3, 63);
+background-color:white;
+padding:20px;
+color:rgb(3, 3, 63);
+font-size:18px;
+font-family:arial;
+font-weight:bold;margin-top:20px;
+margin-bottom:20px;
+}
+#paymentbutton>button:hover{
+background-color:rgb(3, 3, 63);
+color:pure whitesmoke;
+}
+
 

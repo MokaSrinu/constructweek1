@@ -405,3 +405,9 @@ baby.forEach(function(ele){
       function homepage(){
           window.location.href="./index.html"
       } 
+      function paymentfunction(){
+        window.location.href="./payment.html";
+      }
+      function orderspage(){
+        window.location.href="./orders.html"
+      }

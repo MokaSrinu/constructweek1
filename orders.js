@@ -123,21 +123,25 @@ function openNav2() {
       window.location.href="./index.html"
   }
 
-  function paymentfunction(){
-    window.location.href="./payment.html";
-  }
-  function orderspage(){
-    window.location.href="./orders.html"
-  }
 
-  
+  var orders=JSON.parse(localStorage.getItem("orders"));
+  orders.forEach(function(ele){
+    var box=document.createElement("div");
+    var img=document.createElement("img");
+    img.src=ele.image_url;
+    var name=document.createElement("p");
+    name.textContent=ele.name;
+    var price=document.createElement("p");
+    price.innerText=ele.price;
+    var discount=document.createElement("p");
+    discount.innerText=ele.discount;
+    var shipping=document.createElement("p");
+    shipping.innerText=ele.shipping;
+    var cartbutton=document.createElement("button");
+    cartbutton.innerText="View order details";
+    
+    box.append(img,name,price,discount,shipping,cartbutton);
+    document.querySelector("#orders").append(box);
+   });
 
-  
-
-
-    
-    
-
-    
-    
-    
+   

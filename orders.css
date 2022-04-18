@@ -389,19 +389,27 @@ color:pure whitesmoke;
     float: left;
     width: 85%;
 }
-#onetimepassword{
-    margin-top:100px;
-    margin-bottom:200px;
+#orders{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
 }
-#onetimepassword>form{
-    width:30%;
-    margin:auto;
-    display:flex;
-    flex-direction: column;
-    padding:30px;
+#orders>div{
+    width:100%;
+    height:auto;
+    padding:20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#onetimepassword>form>input{
+#orders>div>img{
+    width:100%;
+    height:auto;
+}
+#orders>div>button{
     padding:10px;
+    width:100%;
     margin-top:10px;
+    background-color:rgb(3, 3, 63);
+    color:white;
+
 }
