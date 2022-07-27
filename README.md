@@ -5,7 +5,7 @@ This Project was collaboratively completed by a
 team of 4 members in just 6 days.<br />
 
 # website Landing page
-<img src="Screenshot (12401).png" />
+<img src="./Shop.PNG" />
 
 ## Features:<br />
 -Login Page | Sign-in Page<br />
