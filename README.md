@@ -4,6 +4,9 @@ application that caters to accessories and clothing.
 This Project was collaboratively completed by a
 team of 4 members in just 6 days.<br />
 
+# website Landing page
+<img src="Screenshot (12401).png" />
+
 ## Features:<br />
 -Login Page | Sign-in Page<br />
 -Product Page<br />
